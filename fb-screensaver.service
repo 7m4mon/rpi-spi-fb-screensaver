@@ -1,0 +1,20 @@
+sudo tee /etc/systemd/system/fb-screensaver.service >/dev/null <<'EOF'
+[Unit]
+Description=SPI framebuffer screensaver (3D text) for Raspberry Pi
+After=multi-user.target
+Wants=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/fb_saver_3dtext.py
+Restart=always
+RestartSec=2
+User=root
+
+# Optional hardening (safe defaults)
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+EOF
