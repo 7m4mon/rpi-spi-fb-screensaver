@@ -29,7 +29,6 @@ sudo systemctl enable --now fb-screensaver.service
 ```
 ### Stop / Disable
 ```bash
-Stop the service:
 sudo systemctl stop fb-screensaver.service
 ```
 
