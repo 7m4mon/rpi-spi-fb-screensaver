@@ -44,3 +44,8 @@ sudo systemctl disable fb-screensaver.service
 - Touch input (ADS7846) exits the screensaver immediately
 - No X11, Wayland, or DPMS required
 - MIT License
+
+## Performance notes
+- fb_saver_3dtext.py and fb_saver_float_hostname.py use approximately 25% CPU on a Raspberry Pi 5  
+(full-frame updates with animation)
+- fb_saver_hostname.py uses less than 1% CPU,updating the framebuffer only once every few seconds
