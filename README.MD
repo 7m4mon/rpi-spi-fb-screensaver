@@ -1,6 +1,6 @@
 # rpi-spi-fb-screensaver
 
-![Image](https://github.com/user-attachments/assets/0882f010-5600-4d21-9b3e-1b7d6db5bb32)
+![Image](https://github.com/user-attachments/assets/a8b93dc9-79e2-433f-8613-162ca9f25688)
 
 A simple framebuffer-based screensaver for Raspberry Pi SPI TFT displays.
 
